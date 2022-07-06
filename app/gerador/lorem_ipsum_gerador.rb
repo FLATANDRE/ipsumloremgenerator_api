@@ -1,7 +1,7 @@
 class LoremIpsumGerador
     
-    def self.generate (qtd_paragraph, qtd_phrases)
-        paragraph = String.new
+    def self.generate (qtd_paragraph, qtd_phrases)       
+        paragraphs = []
         phrases = String.new
         qtd_words = 12
         words = String.new
@@ -15,11 +15,10 @@ class LoremIpsumGerador
                 phrases += "\n"
                 words = String.new
             }
-            paragraph.concat phrases
-            paragraph += "\n\n\n"
+            paragraphs << phrases
             phrases = String.new
         }
-        paragraph
+        paragraphs
     end
 
 

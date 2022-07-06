@@ -22,12 +22,12 @@ class IpsumResponse
         @message = value
     end
 
-    def data
-        @data
+    def text
+        @text
     end
 
-    def data=(value)
-        @data = value
+    def text=(value)
+        @text = value
     end
 
     def created_at
